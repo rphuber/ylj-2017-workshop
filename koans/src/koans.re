@@ -20,7 +20,7 @@ describe
         (module Koan09_Lists),
         (module Koan10_Arrays),
         (module Koan11_Tuples),
-        (module Koan12_Dictionaries),
+        (module Koan12_Maps),
         (module Koan13_Results),
         (module Koan14_Strings),
         (module Koan15_Regexes),

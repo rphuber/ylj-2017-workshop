@@ -4,6 +4,7 @@
 var List                         = require("bs-platform/lib/js/list.js");
 var Curry                        = require("bs-platform/lib/js/curry.js");
 var Mocha                        = require("mocha");
+var Koan12_Maps                  = require("./koans/koan12_Maps.js");
 var Koan16_Time                  = require("./koans/koan16_Time.js");
 var Koan18_Sets                  = require("./koans/koan18_Sets.js");
 var Koan08_Maybe                 = require("./koans/koan08_Maybe.js");
@@ -19,7 +20,6 @@ var Koan19_Records               = require("./koans/koan19_Records.js");
 var Koan02_Literals              = require("./koans/koan02_Literals.js");
 var Koan07_Functions             = require("./koans/koan07_Functions.js");
 var Koan20_UnionTypes            = require("./koans/koan20_UnionTypes.js");
-var Koan12_Dictionaries          = require("./koans/koan12_Dictionaries.js");
 var Koan04_LogicalOperators      = require("./koans/koan04_LogicalOperators.js");
 var Koan06_NumberConversions     = require("./koans/koan06_NumberConversions.js");
 var Koan03_ComparisonOperators   = require("./koans/koan03_ComparisonOperators.js");
@@ -53,7 +53,7 @@ Mocha.describe("ReasonML bucklescript Koans", function () {
                                     /* :: */[
                                       /* Koan11_Tuples */[Koan11_Tuples.koans],
                                       /* :: */[
-                                        /* Koan12_Dictionaries */[Koan12_Dictionaries.koans],
+                                        [Koan12_Maps.koans],
                                         /* :: */[
                                           /* Koan13_Results */[Koan13_Results.koans],
                                           /* :: */[
