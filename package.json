@@ -7,6 +7,8 @@
     "bs-containers": "bassjacob/bs-containers",
     "bs-express": "buckletypes/bs-express",
     "bs-platform": "^1.7.1",
+    "nodemon": "^1.11.0",
+    "mocha": "^3.2.0",
     "react": "15.4.0",
     "react-dom": "15.4.0",
     "react-router": "^4.1.1",
