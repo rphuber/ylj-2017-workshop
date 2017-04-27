@@ -39,6 +39,6 @@ npm i
 
 Email: mailto:bassjacob@gmail.com
 
-Twitter: [[@bassjacob](https://twitter.com/bassjacob)@bassjacob](https://twitter.com/bassjacob)
+Twitter: [@bassjacob](https://twitter.com/bassjacob)(https://twitter.com/bassjacob)
 
 Join the ReasonML Discord channel at https://discord.gg/U8zfzKF
