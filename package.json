@@ -1,0 +1,29 @@
+{
+  "name": "reasonml-workshop",
+  "version": "1.0.0",
+  "description": "This workshop runs through two projects, koans and minesweeper. The first project is a koans folder with a number of TDD tasks to introduce the language elements and features. The second task is a step by step introduction to applying the language to building the game Minesweeper.",
+  "main": "index.js",
+  "dependencies": {
+    "bs-containers": "bassjacob/bs-containers",
+    "bs-express": "buckletypes/bs-express",
+    "bs-platform": "^1.7.1",
+    "react": "15.4.0",
+    "react-dom": "15.4.0",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
+    "reason-react": "reasonml/reason-react",
+    "webpack": "^2.4.1",
+    "webpack-dev-middleware": "^1.10.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bassjacob/ylj-2017-workshop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bassjacob/ylj-2017-workshop/issues"
+  },
+  "homepage": "https://github.com/bassjacob/ylj-2017-workshop#readme"
+}
