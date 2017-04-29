@@ -4,22 +4,19 @@
 var List                         = require("bs-platform/lib/js/list.js");
 var Curry                        = require("bs-platform/lib/js/curry.js");
 var Mocha                        = require("mocha");
-var Koan12_Maps                  = require("./koans/koan12_Maps.js");
-var Koan16_Time                  = require("./koans/koan16_Time.js");
-var Koan18_Sets                  = require("./koans/koan18_Sets.js");
+var Koan1x_Maps                  = require("./koans/koan1x_Maps.js");
+var Koan1x_Sets                  = require("./koans/koan1x_Sets.js");
 var Koan08_Maybe                 = require("./koans/koan08_Maybe.js");
 var Koan09_Lists                 = require("./koans/koan09_Lists.js");
-var Koan17_Dates                 = require("./koans/koan17_Dates.js");
 var Koan10_Arrays                = require("./koans/koan10_Arrays.js");
 var Koan11_Tuples                = require("./koans/koan11_Tuples.js");
 var Koan01_Expects               = require("./koans/koan01_Expects.js");
-var Koan13_Results               = require("./koans/koan13_Results.js");
-var Koan14_Strings               = require("./koans/koan14_Strings.js");
-var Koan15_Regexes               = require("./koans/koan15_Regexes.js");
-var Koan19_Records               = require("./koans/koan19_Records.js");
+var Koan12_Results               = require("./koans/koan12_Results.js");
+var Koan13_Strings               = require("./koans/koan13_Strings.js");
+var Koan14_Records               = require("./koans/koan14_Records.js");
 var Koan02_Literals              = require("./koans/koan02_Literals.js");
 var Koan07_Functions             = require("./koans/koan07_Functions.js");
-var Koan20_UnionTypes            = require("./koans/koan20_UnionTypes.js");
+var Koan15_UnionTypes            = require("./koans/koan15_UnionTypes.js");
 var Koan04_LogicalOperators      = require("./koans/koan04_LogicalOperators.js");
 var Koan06_NumberConversions     = require("./koans/koan06_NumberConversions.js");
 var Koan03_ComparisonOperators   = require("./koans/koan03_ComparisonOperators.js");
@@ -53,27 +50,18 @@ Mocha.describe("ReasonML bucklescript Koans", function () {
                                     /* :: */[
                                       /* Koan11_Tuples */[Koan11_Tuples.koans],
                                       /* :: */[
-                                        [Koan12_Maps.koans],
+                                        /* Koan12_Results */[Koan12_Results.koans],
                                         /* :: */[
-                                          /* Koan13_Results */[Koan13_Results.koans],
+                                          /* Koan13_Strings */[Koan13_Strings.koans],
                                           /* :: */[
-                                            /* Koan14_Strings */[Koan14_Strings.koans],
+                                            [Koan14_Records.koans],
                                             /* :: */[
-                                              /* Koan15_Regexes */[Koan15_Regexes.koans],
+                                              /* Koan15_UnionTypes */[Koan15_UnionTypes.koans],
                                               /* :: */[
-                                                /* Koan16_Time */[Koan16_Time.koans],
+                                                [Koan1x_Maps.koans],
                                                 /* :: */[
-                                                  /* Koan17_Dates */[Koan17_Dates.koans],
-                                                  /* :: */[
-                                                    /* Koan18_Sets */[Koan18_Sets.koans],
-                                                    /* :: */[
-                                                      /* Koan19_Records */[Koan19_Records.koans],
-                                                      /* :: */[
-                                                        /* Koan20_UnionTypes */[Koan20_UnionTypes.koans],
-                                                        /* [] */0
-                                                      ]
-                                                    ]
-                                                  ]
+                                                  [Koan1x_Sets.koans],
+                                                  /* [] */0
                                                 ]
                                               ]
                                             ]

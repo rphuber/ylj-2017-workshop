@@ -34,7 +34,7 @@ function koans() {
               return /* () */0;
             });
         Mocha.it("Maps can be created empty", function () {
-              Assert.equal(IMap[/* empty */0], Helpers.__(/* () */0));
+              Assert.ok(Curry._3(IMap[/* equal */8], Caml_obj.caml_equal, IMap[/* empty */0], Helpers.__(/* () */0)));
               return /* () */0;
             });
         Mocha.it("Maps can be initialised with a single key value pair", function () {
