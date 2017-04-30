@@ -3,12 +3,19 @@
   "version": "1.0.0",
   "description": "This workshop runs through two projects, koans and minesweeper. The first project is a koans folder with a number of TDD tasks to introduce the language elements and features. The second task is a step by step introduction to applying the language to building the game Minesweeper.",
   "main": "index.js",
+  "scripts": {
+    "koans:pre": "cd koans && bsb -clean-world && bsb -make-world",
+    "koans:test": "nodemon -w koans/lib/js -x 'mocha -b --growl koans/lib/js/src/koans.js'",
+    "koans:build-watch": "cd koans && bsb -make-world -w",
+    "koans": "npm run koans:pre && run-p -c koans:test koans:build-watch"
+  },
   "dependencies": {
     "bs-containers": "bassjacob/bs-containers",
     "bs-express": "buckletypes/bs-express",
     "bs-platform": "^1.7.1",
-    "nodemon": "^1.11.0",
     "mocha": "^3.2.0",
+    "nodemon": "^1.11.0",
+    "npm-run-all": "^4.0.2",
     "react": "15.4.0",
     "react-dom": "15.4.0",
     "react-router": "^4.1.1",

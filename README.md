@@ -10,12 +10,12 @@ Windows support is fairly spotty at present. I'll make sure to have a virtualbox
 
 ## Requirements
 
-* NodeJS >= v7.6.0 and npm >= 4 [Installation Instructions](https://nodejs.org/en/download/current/)
-* Please follow the [reasonml tooling instructions](https://facebook.github.io/reason/tools.html#editor-integration) to set up your text editor. At time of writing this, the following editors are supported:
-  * vim / neovim
-  * emacs
-  * atom
-  * vscode
+*   NodeJS >= v7.6.0 and npm >= 4 [Installation Instructions](https://nodejs.org/en/download/current/)
+*   Please follow the [reasonml tooling instructions](https://facebook.github.io/reason/tools.html#editor-integration) to set up your text editor. At time of writing this, the following editors are supported:
+    *   vim / neovim
+    *   emacs
+    *   atom
+    *   vscode
 
 ## Installation Instructions
 
@@ -35,10 +35,54 @@ cd ylj-2017-Workshop
 npm i
 ```
 
+## Getting Started
+
+### Before attending the workshop!!!
+
+Once you have the repository cloned and the dependencies installed, please run the following command to test the installation. From inside the root of the repository (the folder you just cloned into) run the following command:
+
+```
+npm run koans
+```
+
+You should see a lot of output on your terminal that looks like this:
+
+```bash
+>>>> Finish compiling
+watching dir src now
+watching dir src/koans now
+[nodemon] 1.11.0
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: /home/j/dev/talks/ylj-2017-reason/a/koans/lib/js/**/*
+[nodemon] starting `mocha -b --growl koans/lib/js/src/koans.js`
+
+
+  ReasonML bucklescript Koans
+    Expects
+      1) Mocha.ok expects a true value
+
+
+  0 passing (9ms)
+  1 failing
+
+  1) ReasonML bucklescript Koans Expects Mocha.ok expects a true value:
+     Error: the array [
+  [
+    "Sys_error"
+    -1
+  ]
+  "error"
+] was thrown, throw an Error :)
+
+[nodemon] app crashed - waiting for file changes before starting...
+```
+
+If you see anything different, or the command fails for any reason, please take a screenshot and contact me.
+
 ## Contact Me
 
 Email: mailto:bassjacob@gmail.com
 
 Twitter: [@bassjacob](https://twitter.com/bassjacob)(https://twitter.com/bassjacob)
 
-Join the ReasonML Discord channel at https://discord.gg/U8zfzKF
+[Join the ReasonML Discord channel](https://discord.gg/U8zfzKF)
