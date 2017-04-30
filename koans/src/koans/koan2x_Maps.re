@@ -37,19 +37,19 @@ let koans _ =>
         fun _ => __ () |> IMap.equal (==) IMap.empty |> Mocha.ok
       );
       Mocha.it "Maps can be initialised with a single key value pair" @@ (
-        fun _ => __ () |> Mocha.eq @@ IMap.singleton 1 "value"
+        fun _ => __ () |> IMap.equal (==) (IMap.singleton 1 "value") |> Mocha.ok
       );
       Mocha.it "or from a list of key-value pairs" @@ (
-        fun _ => __ () |> Mocha.eq (IMap.size @@ IMap.fromList [(1, "a"), (2, "b")])
+        fun _ => IMap.fromList (__ ()) |> IMap.size |> Mocha.eq 2
       );
       Mocha.it "they can also be converted back to a list" @@ (
-        fun _ => __ () |> Mocha.eq (IMap.toList @@ IMap.fromList [(1, "a"), (2, "b")])
+        fun _ => __ () |> List.equal (==) (IMap.toList @@ IMap.fromList [(1, "a"), (2, "b")]) |> Mocha.ok
       );
       Mocha.it "checking for an empty dictionary is easy" @@ (
-        fun _ => __ () |> Mocha.eq (IMap.isEmpty IMap.empty)
+        fun _ => __ () |> IMap.isEmpty |> Mocha.ok
       );
       Mocha.it "you can also check if a key is present in the dictionary" @@ (
-        fun _ => __ () |> Mocha.eq (IMap.mem 1 @@ IMap.singleton 1 "a")
+        fun _ => __ () |> fun key => IMap.mem key (IMap.singleton 1 "a") |> Mocha.ok
       );
       Mocha.it "or get the value associated with the key" @@ (
         fun _ => Some (__ ()) |> Mocha.eq (IMap.get 1 @@ IMap.singleton 1 "a")

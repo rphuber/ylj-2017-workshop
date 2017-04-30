@@ -3,6 +3,7 @@
 
 var Bmap     = require("bs-containers/lib/js/src/bmap.js");
 var Bopt     = require("bs-containers/lib/js/src/bopt.js");
+var Blist    = require("bs-containers/lib/js/src/blist.js");
 var Curry    = require("bs-platform/lib/js/curry.js");
 var Mocha    = require("mocha");
 var Bfloat   = require("bs-containers/lib/js/src/bfloat.js");
@@ -38,47 +39,36 @@ function koans() {
               return /* () */0;
             });
         Mocha.it("Maps can be initialised with a single key value pair", function () {
-              Assert.equal(Curry._2(IMap[/* singleton */4], 1, "value"), Helpers.__(/* () */0));
+              Assert.ok(Curry._3(IMap[/* equal */8], Caml_obj.caml_equal, Curry._2(IMap[/* singleton */4], 1, "value"), Helpers.__(/* () */0)));
               return /* () */0;
             });
         Mocha.it("or from a list of key-value pairs", function () {
-              Assert.equal(Curry._1(IMap[/* size */25], Curry._1(IMap[/* fromList */30], /* :: */[
-                            /* tuple */[
-                              1,
-                              "a"
-                            ],
-                            /* :: */[
-                              /* tuple */[
-                                2,
-                                "b"
-                              ],
-                              /* [] */0
-                            ]
-                          ])), Helpers.__(/* () */0));
+              Assert.equal(2, Curry._1(IMap[/* size */25], Curry._1(IMap[/* fromList */30], Helpers.__(/* () */0))));
               return /* () */0;
             });
         Mocha.it("they can also be converted back to a list", function () {
-              Assert.equal(Curry._1(IMap[/* toList */32], Curry._1(IMap[/* fromList */30], /* :: */[
-                            /* tuple */[
-                              1,
-                              "a"
-                            ],
-                            /* :: */[
-                              /* tuple */[
-                                2,
-                                "b"
-                              ],
-                              /* [] */0
-                            ]
-                          ])), Helpers.__(/* () */0));
+              Assert.ok(Blist.equal(Caml_obj.caml_equal, Curry._1(IMap[/* toList */32], Curry._1(IMap[/* fromList */30], /* :: */[
+                                /* tuple */[
+                                  1,
+                                  "a"
+                                ],
+                                /* :: */[
+                                  /* tuple */[
+                                    2,
+                                    "b"
+                                  ],
+                                  /* [] */0
+                                ]
+                              ])), Helpers.__(/* () */0)));
               return /* () */0;
             });
         Mocha.it("checking for an empty dictionary is easy", function () {
-              Assert.equal(Curry._1(IMap[/* isEmpty */21], IMap[/* empty */0]), Helpers.__(/* () */0));
+              Assert.ok(Curry._1(IMap[/* isEmpty */21], Helpers.__(/* () */0)));
               return /* () */0;
             });
         Mocha.it("you can also check if a key is present in the dictionary", function () {
-              Assert.equal(Curry._2(IMap[/* mem */2], 1, Curry._2(IMap[/* singleton */4], 1, "a")), Helpers.__(/* () */0));
+              var key = Helpers.__(/* () */0);
+              Assert.ok(Curry._2(IMap[/* mem */2], key, Curry._2(IMap[/* singleton */4], 1, "a")));
               return /* () */0;
             });
         Mocha.it("or get the value associated with the key", function () {

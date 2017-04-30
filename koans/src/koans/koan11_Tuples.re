@@ -1,5 +1,4 @@
 open Helpers;
-open Containers;
 
 let koans _ => Mocha.describe "Tuples" @@ fun _ => {
   Mocha.it "tuples are like lists of fixed length" @@
@@ -19,4 +18,3 @@ let koans _ => Mocha.describe "Tuples" @@ fun _ => {
         (__())
             |> Mocha.eq (snd (1,"foo"));
 };
-
