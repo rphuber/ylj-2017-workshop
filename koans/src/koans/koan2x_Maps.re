@@ -43,13 +43,14 @@ let koans _ =>
         fun _ => IMap.fromList (__ ()) |> IMap.size |> Mocha.eq 2
       );
       Mocha.it "they can also be converted back to a list" @@ (
-        fun _ => __ () |> List.equal (==) (IMap.toList @@ IMap.fromList [(1, "a"), (2, "b")]) |> Mocha.ok
+        fun _ =>
+          __ () |> List.equal (==) (IMap.toList @@ IMap.fromList [(1, "a"), (2, "b")]) |> Mocha.ok
       );
       Mocha.it "checking for an empty dictionary is easy" @@ (
         fun _ => __ () |> IMap.isEmpty |> Mocha.ok
       );
       Mocha.it "you can also check if a key is present in the dictionary" @@ (
-        fun _ => __ () |> fun key => IMap.mem key (IMap.singleton 1 "a") |> Mocha.ok
+        fun _ => __ () |> (fun key => IMap.mem key (IMap.singleton 1 "a") |> Mocha.ok)
       );
       Mocha.it "or get the value associated with the key" @@ (
         fun _ => Some (__ ()) |> Mocha.eq (IMap.get 1 @@ IMap.singleton 1 "a")

@@ -1,5 +1,3 @@
-/* comments begin with /* and end with */ */
-/* replace (__ ()) with something that makes the tests pass */
 open Helpers;
 
 let koans _ =>
@@ -12,6 +10,6 @@ let koans _ =>
         Mocha.it "floats have a decimal" (fun _ => Mocha.eq 1.0 (__ ()));
         Mocha.it "integers do not" (fun _ => Mocha.eq 1 (__ ()));
         Mocha.it "floats can be negative" (fun _ => Mocha.eq (-1.0) (__ ()));
-        Mocha.it "integers can be negative" (fun _ => Mocha.eq (-1) (__ ()));
+        Mocha.it "integers can be negative" (fun _ => Mocha.eq (-1) (__ ()))
       }
     );
