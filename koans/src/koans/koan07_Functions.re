@@ -2,8 +2,6 @@ open Helpers;
 
 open Containers;
 
-let add1 x => x + 1;
-
 let add x y => x + y;
 
 let subtract x y => x - y;
@@ -23,10 +21,16 @@ let koans _ =>
         fun _ => __ () |> Mocha.eq (Fun.id 4)
       );
       Mocha.it "functions are defined as 'name args = implementation'" @@ (
-        fun _ => add1 (__ ()) |> Mocha.eq 5
+        fun _ => {
+          let add1 x => x + 1;
+          add1 (__ ()) |> Mocha.eq 5
+        }
       );
       Mocha.it "functions may have an optional type signature" @@ (
-        fun _ => add 3 (__ ()) |> Mocha.eq 5
+        fun _ => {
+          let add1 (_: int) :int => __ ();
+          add1 3 |> Mocha.eq 5
+        }
       );
       Mocha.it "anonymous functions are defined with '\\args -> implementation'" @@ (
         fun _ => subtract 8 (__ ()) |> Mocha.eq 5
@@ -50,7 +54,10 @@ let koans _ =>
         fun _ => __ () |> Mocha.eq (add 1 9 |> subtract4)
       );
       Mocha.it "Fun.(%) composes function g with function f" @@ (
-        fun _ => __ () |> Mocha.eq ((Fun.(%) subtract4 multiplyBy2) 9)
+        fun _ => {
+          let multiplyAndSubtract = Fun.(%) subtract4 multiplyBy2;
+          __ () |> Mocha.eq @@ multiplyAndSubtract 9
+        }
       )
     }
   );

@@ -11,19 +11,19 @@ function koans() {
               Assert.equal(5, Helpers.__(/* () */0));
               return /* () */0;
             });
-        Mocha.it("floor converts a float to an int (rounding down)", function () {
+        Mocha.it("floor rounds a float down", function () {
               Assert.equal(Math.floor(3.6), Helpers.__(/* () */0));
               return /* () */0;
             });
-        Mocha.it("floor converts a float to an int (rounding down)", function () {
+        Mocha.it("floor rounds a negative float down", function () {
               Assert.equal(Math.floor(-3.6), Helpers.__(/* () */0));
               return /* () */0;
             });
-        Mocha.it("ceiling converts a float to an int (rounding up)", function () {
+        Mocha.it("ceiling rounds a float up", function () {
               Assert.equal(Math.ceil(3.6), Helpers.__(/* () */0));
               return /* () */0;
             });
-        Mocha.it("ceiling converts a float to an int (rounding up)", function () {
+        Mocha.it("ceiling rounds a negative float up", function () {
               Assert.equal(Math.ceil(-3.6), Helpers.__(/* () */0));
               return /* () */0;
             });

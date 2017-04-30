@@ -6,8 +6,8 @@ var Curry                        = require("bs-platform/lib/js/curry.js");
 var Mocha                        = require("mocha");
 var Koan2x_Maps                  = require("./koans/koan2x_Maps.js");
 var Koan2x_Sets                  = require("./koans/koan2x_Sets.js");
-var Koan08_Maybe                 = require("./koans/koan08_Maybe.js");
 var Koan09_Lists                 = require("./koans/koan09_Lists.js");
+var Koan08_Option                = require("./koans/koan08_Option.js");
 var Koan10_Arrays                = require("./koans/koan10_Arrays.js");
 var Koan11_Tuples                = require("./koans/koan11_Tuples.js");
 var Koan01_Expects               = require("./koans/koan01_Expects.js");
@@ -42,7 +42,7 @@ Mocha.describe("ReasonML bucklescript Koans", function () {
                             /* :: */[
                               [Koan07_Functions.koans],
                               /* :: */[
-                                /* Koan08_Maybe */[Koan08_Maybe.koans],
+                                /* Koan08_Option */[Koan08_Option.koans],
                                 /* :: */[
                                   [Koan09_Lists.koans],
                                   /* :: */[

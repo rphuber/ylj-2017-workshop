@@ -18,7 +18,7 @@ describe
           (module Koan05_MathematicalOperators),
           (module Koan06_NumberConversions),
           (module Koan07_Functions),
-          (module Koan08_Maybe),
+          (module Koan08_Option),
           (module Koan09_Lists),
           (module Koan10_Arrays),
           (module Koan11_Tuples),

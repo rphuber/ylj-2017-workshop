@@ -20,11 +20,8 @@ let koans _ =>
       Mocha.it "concat appends a list of strings together, interpolated with a separator" @@ (
         fun _ => __ () |> Mocha.eq (String.concat " " ["ReasonML", "Lang", "Yay!"])
       );
-      Mocha.it "slice gets a substring" @@ (
-        fun _ => __ () |> Mocha.eq (String.sub "I'm a string" 4 12)
-      );
-      Mocha.it "negative indices start from the end" @@ (
-        fun _ => __ () |> Mocha.eq (String.sub "I'm a string" (-8) (-1))
+      Mocha.it "sub slices a substring (warning, the arguments must be in the bounds of the string)" @@ (
+        fun _ => __ () |> Mocha.eq (String.sub "I'm a string" 0 2)
       );
       Mocha.it "left takes the first n characters of a string" @@ (
         fun _ => __ () |> Mocha.eq (String.take 3 "I'm a string")

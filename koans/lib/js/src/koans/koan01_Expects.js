@@ -15,10 +15,6 @@ function koans() {
               Assert.equal(1, Helpers.__(/* () */0));
               return /* () */0;
             });
-        Mocha.it("Mocha.neq expects two unequal values", function () {
-              Assert.equal(1, Helpers.__(/* () */0));
-              return /* () */0;
-            });
         return /* () */0;
       });
   return /* () */0;

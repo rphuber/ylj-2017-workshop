@@ -14,10 +14,13 @@ let koans _ =>
       );
       Mocha.it "you can access a field with dot notation" @@ (fun _ => __ () |> Mocha.eq point.x);
       Mocha.it "you can extract data with destructuring too" @@ (
-        fun _ => {
-          let _ = point;
-          __ () |> Mocha.eq 1
-        }
+        fun _ =>
+          (
+            switch point {
+            | _ => __ ()
+            }
+          ) |>
+          Mocha.eq 1
       )
     }
   );

@@ -6,10 +6,6 @@ var Mocha   = require("mocha");
 var Assert  = require("assert");
 var Helpers = require("../helpers.js");
 
-function add1(x) {
-  return x + 1 | 0;
-}
-
 function add(x, y) {
   return x + y | 0;
 }
@@ -45,7 +41,7 @@ function koans() {
               return /* () */0;
             });
         Mocha.it("functions may have an optional type signature", function () {
-              Assert.equal(5, 3 + Helpers.__(/* () */0) | 0);
+              Assert.equal(5, Helpers.__(/* () */0));
               return /* () */0;
             });
         Mocha.it("anonymous functions are defined with '\\args -> implementation'", function () {
@@ -85,7 +81,6 @@ function koans() {
   return /* () */0;
 }
 
-exports.add1          = add1;
 exports.add           = add;
 exports.subtract      = subtract;
 exports.subtractFrom4 = subtractFrom4;

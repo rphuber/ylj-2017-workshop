@@ -8,7 +8,7 @@ let koans _ =>
   Mocha.describe "Arrays" @@ (
     fun _ => {
       Mocha.it "arrays can be created from a list" @@ (
-        fun _ => fullArray |> Mocha.eq (Array.of_list [0, 1])
+        fun _ => fullArray |> Mocha.eq (Array.of_list [3, 0])
       );
       Mocha.it "arrays can also be turned into lists" @@ (
         fun _ => __ () |> Mocha.eq (Array.to_list @@ Array.of_list [0, 1])
@@ -29,9 +29,6 @@ let koans _ =>
       );
       Mocha.it "initialize creates an array based on the index" @@ (
         fun _ => Array.of_list (__ ()) |> Mocha.eq (Array.init 3 (fun i => i * 2))
-      );
-      Mocha.it "you can test how many elements are in an array" @@ (
-        fun _ => __ () |> Mocha.eq (Array.length fullArray)
       );
       Mocha.it "mapping is just like with lists" @@ (
         fun _ =>

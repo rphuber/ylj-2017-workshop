@@ -53,7 +53,9 @@ function koans() {
               return /* () */0;
             });
         Mocha.it("exists determines if a list is empty", function () {
-              Assert.ok(Blist.exists(Helpers.__(/* () */0), /* :: */[
+              Assert.ok(Blist.exists(function () {
+                        return Helpers.__(/* () */0);
+                      }, /* :: */[
                         1,
                         /* :: */[
                           2,
@@ -269,7 +271,7 @@ function koans() {
                       ]), Helpers.__(/* () */0));
               return /* () */0;
             });
-        Mocha.it("foldl reduces a list from the left", function () {
+        Mocha.it("fold_left reduces a list from the left", function () {
               Assert.equal(Blist.fold_left(function (x, y) {
                         return /* :: */[
                                 y,
@@ -290,7 +292,7 @@ function koans() {
                       ]), Helpers.__(/* () */0));
               return /* () */0;
             });
-        Mocha.it("foldr reduces a list from the right", function () {
+        Mocha.it("fold_right reduces a list from the right", function () {
               Assert.equal(Blist.fold_right(function (x, y) {
                         return /* :: */[
                                 x,

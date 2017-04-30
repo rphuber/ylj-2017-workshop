@@ -16,22 +16,6 @@ function koans() {
               Assert.equal(/* Base */Block.__(0, [/* C */1]), /* Base */Block.__(0, [Helpers.__(/* () */0)]));
               return /* () */0;
             });
-        Mocha.it("all types in the union type are the same type", function () {
-              Assert.equal(/* Base */Block.__(0, [/* A */0]), /* Strand */Block.__(1, [/* :: */[
-                        /* A */0,
-                        /* :: */[
-                          /* T */3,
-                          /* :: */[
-                            /* C */1,
-                            /* :: */[
-                              /* G */2,
-                              /* [] */0
-                            ]
-                          ]
-                        ]
-                      ]]));
-              return /* () */0;
-            });
         Mocha.it("switch statements may be used to extract the data from the type", function () {
               Assert.equal(/* A */0, Helpers.__(/* () */0));
               return /* () */0;

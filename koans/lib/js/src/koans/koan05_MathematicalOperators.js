@@ -26,7 +26,7 @@ function koans() {
               return /* () */0;
             });
         Mocha.it("* multiplies numbers", function () {
-              Assert.equal(6, (Helpers.__(/* () */0) << 2));
+              Assert.equal(24, (Helpers.__(/* () */0) << 2));
               return /* () */0;
             });
         Mocha.it("/. divides Floats", function () {
@@ -37,16 +37,8 @@ function koans() {
               Assert.equal(2, Caml_int32.div(5, Helpers.__(/* () */0)));
               return /* () */0;
             });
-        Mocha.it("mod performs modular arithmetic (which is different)", function () {
-              Assert.equal(-1, Helpers.__(/* () */0));
-              return /* () */0;
-            });
-        Mocha.it("log returns the natural log of the value", function () {
-              Assert.equal(Math.log(2.0), Helpers.__(/* () */0));
-              return /* () */0;
-            });
-        Mocha.it("log10 returns the base10 log of the value", function () {
-              Assert.equal(Math.log10(2.0), Helpers.__(/* () */0));
+        Mocha.it("mod performs modular arithmetic", function () {
+              Assert.equal(3, Helpers.__(/* () */0));
               return /* () */0;
             });
         return /* () */0;

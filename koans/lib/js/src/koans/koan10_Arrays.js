@@ -14,9 +14,9 @@ function koans() {
   Mocha.describe("Arrays", function () {
         Mocha.it("arrays can be created from a list", function () {
               Assert.equal(Barray.of_list(/* :: */[
-                        0,
+                        3,
                         /* :: */[
-                          1,
+                          0,
                           /* [] */0
                         ]
                       ]), fullArray);
@@ -70,10 +70,6 @@ function koans() {
               Assert.equal(Barray.init(3, function (i) {
                         return (i << 1);
                       }), Barray.of_list(Helpers.__(/* () */0)));
-              return /* () */0;
-            });
-        Mocha.it("you can test how many elements are in an array", function () {
-              Assert.equal(Barray.length(fullArray), Helpers.__(/* () */0));
               return /* () */0;
             });
         Mocha.it("mapping is just like with lists", function () {

@@ -37,12 +37,8 @@ function koans() {
                       ]), Helpers.__(/* () */0));
               return /* () */0;
             });
-        Mocha.it("slice gets a substring", function () {
-              Assert.equal(Bstring.sub("I'm a string", 4, 12), Helpers.__(/* () */0));
-              return /* () */0;
-            });
-        Mocha.it("negative indices start from the end", function () {
-              Assert.equal(Bstring.sub("I'm a string", -8, -1), Helpers.__(/* () */0));
+        Mocha.it("sub slices a substring (warning, the arguments must be in the bounds of the string)", function () {
+              Assert.equal(Bstring.sub("I'm a string", 0, 2), Helpers.__(/* () */0));
               return /* () */0;
             });
         Mocha.it("left takes the first n characters of a string", function () {

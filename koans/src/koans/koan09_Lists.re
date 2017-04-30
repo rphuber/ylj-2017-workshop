@@ -25,7 +25,7 @@ let koans _ =>
         fun _ => __ () |> Mocha.eq (List.is_empty [])
       );
       Mocha.it "exists determines if a list is empty" @@ (
-        fun _ => Mocha.ok @@ List.exists (__ ()) [1, 2, 3]
+        fun _ => Mocha.ok @@ List.exists (fun _ => __ ()) [1, 2, 3]
       );
       Mocha.it "head_opt returns an optional containing the first item in a list" @@ (
         fun _ => Some (__ ()) |> Mocha.eq (List.head_opt [1, 2, 3])
@@ -70,10 +70,10 @@ let koans _ =>
       Mocha.it "map2 applies a function to elements from 2 lists" @@ (
         fun _ => __ () |> Mocha.eq (List.map2 (fun x y => x * y) [1, 2, 3] [4, 5, 6])
       );
-      Mocha.it "foldl reduces a list from the left" @@ (
+      Mocha.it "fold_left reduces a list from the left" @@ (
         fun _ => __ () |> Mocha.eq (List.fold_left (fun x y => [y, ...x]) ["a"] ["b", "c", "d"])
       );
-      Mocha.it "foldr reduces a list from the right" @@ (
+      Mocha.it "fold_right reduces a list from the right" @@ (
         fun _ => __ () |> Mocha.eq (List.fold_right (fun x y => [x, ...y]) ["b", "c", "d"] ["a"])
       )
     }
