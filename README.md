@@ -84,6 +84,10 @@ watching dir src/koans now
 
 If you see anything different, or the command fails for any reason, please take a screenshot and contact me.
 
+## Getting Started
+
+Please read the readme's in each of the subfolders to get started.
+
 ## Contact Me
 
 Email: mailto:bassjacob@gmail.com

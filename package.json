@@ -7,22 +7,30 @@
     "koans:pre": "cd koans && bsb -clean-world && bsb -make-world",
     "koans:test": "nodemon -w koans/lib/js -x 'mocha -b --growl koans/lib/js/src/koans.js'",
     "koans:build-watch": "cd koans && bsb -make-world -w",
-    "koans": "npm run koans:pre && run-p -c koans:test koans:build-watch"
+    "koans": "npm run koans:pre && run-p -c koans:test koans:build-watch",
+    "minesweeper:pre": "cd minesweeper && bsb -clean-world && bsb -make-world",
+    "minesweeper:run": "nodemon -w minesweeper/lib/js -x 'node minesweeper/lib/js/src/minesweeper.js'",
+    "minesweeper:build-watch": "cd minesweeper && bsb -make-world -w",
+    "minesweeper:bundle-watch": "cd minesweeper && webpack-dev-server",
+    "minesweeper": "npm-run-all minesweeper:pre --parallel -c minesweeper:run minesweeper:bundle-watch minesweeper:build-watch"
   },
   "dependencies": {
     "bs-containers": "bassjacob/bs-containers",
     "bs-express": "buckletypes/bs-express",
-    "bs-platform": "^1.7.1",
+    "bs-platform": "1.7.3",
     "mocha": "^3.2.0",
     "nodemon": "^1.11.0",
     "npm-run-all": "^4.0.2",
     "react": "15.4.0",
     "react-dom": "15.4.0",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "react-markdown": "^2.5.0",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
     "reason-react": "reasonml/reason-react",
     "webpack": "^2.4.1",
-    "webpack-dev-middleware": "^1.10.2"
+    "webpack-dev-middleware": "^1.10.2",
+    "webpack-dev-server": "^2.4.5"
   },
   "repository": {
     "type": "git",
