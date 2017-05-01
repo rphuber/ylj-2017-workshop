@@ -83,6 +83,6 @@ If you see anything different, or the command fails for any reason, please take 
 
 Email: mailto:bassjacob@gmail.com
 
-Twitter: [@bassjacob](https://twitter.com/bassjacob)(https://twitter.com/bassjacob)
+Twitter: [@bassjacob](https://twitter.com/bassjacob)
 
 [Join the ReasonML Discord channel](https://discord.gg/U8zfzKF)
