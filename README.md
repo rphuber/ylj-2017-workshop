@@ -1,5 +1,7 @@
 # Yow Lambda Jam 2017 - ReasonML Workshop
 
+## This is still being amended. Please check back here on 7th May for the final version. Make sure to pull the latest version before the workshop on the 9th.
+
 This workshop runs through two projects, koans and minesweeper. The first project is a koans folder with a number of TDD tasks to introduce the language elements and features. The second task is a step by step introduction to applying the language to building the game Minesweeper.
 
 Each of these projects is self-documenting. You should start in the koans project, and follow the instructions there. Once that project is completed, or you feel comfortable going ahead, you should begin in the minesweeper project.
