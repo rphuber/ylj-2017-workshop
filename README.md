@@ -1,5 +1,7 @@
 # Yow Lambda Jam 2017 - ReasonML Workshop
 
+## If you are on windows, or any non-mainstream linux / OSX, please download virtualbox and set it up before arriving. I will provide a vbox image with the latest version of this repo set up, and with some text editors set up inside it for the day.
+
 ## This is still being amended. Please check back here on 7th May for the final version. Make sure to pull the latest version before the workshop on the 9th.
 
 This workshop runs through two projects, koans and minesweeper. The first project is a koans folder with a number of TDD tasks to introduce the language elements and features. The second task is a step by step introduction to applying the language to building the game Minesweeper.
@@ -12,7 +14,8 @@ Windows support is fairly spotty at present. I'll make sure to have a virtualbox
 
 ## Requirements
 
-*   NodeJS >= v7.6.0 and npm >= 4 [Installation Instructions](https://nodejs.org/en/download/current/)
+*   NodeJS >= v6.6.0 and npm >= 3 [Installation Instructions](https://nodejs.org/en/download)
+*   Install refmt, ocamlmerlin and ocamlmerlin-reason according to [reasonml js workflow](https://facebook.github.io/reason/jsWorkflow.html#javascript-workflow-editor-setup-global-utilities)
 *   Please follow the [reasonml tooling instructions](https://facebook.github.io/reason/tools.html#editor-integration) to set up your text editor. At time of writing this, the following editors are supported:
     *   vim / neovim
     *   emacs
