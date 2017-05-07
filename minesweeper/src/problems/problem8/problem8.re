@@ -1,24 +1,18 @@
 module Problem8Inner = {
-  let style =
-    ReactDOMRe.Style.make
-      /* place the appropriate styles here */
-      ();
   module Component = {
     include ReactRe.Component;
     type props = unit;
     let name = "Problem8";
-    let render _ => <div style />;
+    let render _ => <div />;
   };
   include ReactRe.CreateComponent Component;
   let createElement = wrapProps ();
 };
 
 module Problem8 = {
-  include ReactRe.Component.Stateful;
+  include ReactRe.Component;
   type props = unit;
-  type state = {clicked: bool, hovered: bool};
   let name = "Problem8";
-  let getInitialState _ => {clicked: false, hovered: false};
   let render _ => <div> <Problem8Inner /> </div>;
 };
 
