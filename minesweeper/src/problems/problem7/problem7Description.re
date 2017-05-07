@@ -69,5 +69,5 @@ let doSomethingWithShow
     X.print y;
 ```
 
+Using this information, let's create a functor that generates a react component for a shape. We'll 
 |};
-
