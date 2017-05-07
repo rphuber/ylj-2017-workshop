@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "koans:pre": "cd koans && bsb -clean-world && bsb -make-world",
-    "koans:test": "nodemon -w koans/lib/js -x 'mocha -b --growl koans/lib/js/src/koans.js'",
+    "koans:test": "nodemon -w koans/lib/js -x 'mocha --growl koans/lib/js/src/koans.js'",
     "koans:build-watch": "cd koans && bsb -make-world -w",
     "koans": "npm run koans:pre && run-p -c koans:test koans:build-watch",
     "minesweeper:pre": "cd minesweeper && bsb -clean-world && bsb -make-world",

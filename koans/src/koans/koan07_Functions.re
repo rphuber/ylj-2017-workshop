@@ -20,7 +20,7 @@ let koans _ =>
       Mocha.it "the id function returns whatever it is passed" @@ (
         fun _ => todo () |> Mocha.eq (Fun.id 4)
       );
-      Mocha.it "functions are defined as 'name args = implementation'" @@ (
+      Mocha.it "functions are defined as 'name args => implementation'" @@ (
         fun _ => {
           let add1 x => x + 1;
           add1 (todo ()) |> Mocha.eq 5
