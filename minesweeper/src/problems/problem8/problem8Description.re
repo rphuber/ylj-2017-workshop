@@ -6,6 +6,8 @@ let src = {|
 
 ## Relevant Koans
 
+* koan07_Functions
+
 ## Instructions
 
 A more relaxing problem after that last one. This problem will teach you the syntax to pass React components as props. In the React library, we can pass constructors around willy-nilly, but not so in ReasonML. To pass a component as a prop in react we have to pass a function containing that component. This is a side effect of the way the JSX ppx operates.

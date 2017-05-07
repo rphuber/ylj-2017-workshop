@@ -3,7 +3,14 @@ let src = {|
 
 ## Requirements
 
+* Describe two new components inside the Problem7 file, Square and circle, using the Shape.Make functor
+* Square should render a 50x50px square
+* Circle should render a 50px radius Circle
+* When clicking the relevant button in the ui, the correct shape should render
+
 ## Relevant Koans
+
+* koan_08_Option
 
 ## Instructions
 

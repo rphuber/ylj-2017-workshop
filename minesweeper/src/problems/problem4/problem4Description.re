@@ -8,6 +8,9 @@ let src = {j|
 
 ## Relevant Koans
 
+* koan07_Functions
+* koan08_Option
+
 ## Instructions
 Building off the workd done last 3, this problem wraps up what you've learnt so far. In this problem we introduce the concept of state. State in this system is essentially used as a sentinel for an internal data change that should force a re-render. The canonical example is a button that increments a counter. On each press of the button, the counter should inrement, causing the counter to re-render.
 

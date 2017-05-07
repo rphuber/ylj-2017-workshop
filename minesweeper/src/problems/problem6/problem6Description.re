@@ -7,6 +7,8 @@ let src = {|
 
 ## Relevant Koans
 
+* koan15_UnionTypes
+
 ## Instructions
 
 The other way to define a module is inside a file. You can nest as many modules as you like, which operates as a kind of namespacing. Each module is contextually aware of its contents, and of the "file" modules, but not of their innards. This presents a tidy way to encapsulate functionality related to some singular concern.

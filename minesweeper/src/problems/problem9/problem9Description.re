@@ -7,6 +7,10 @@ let src = {|
 
 ## Relevant Koans
 
+* koan13_Strings
+* koan08_Option
+* koan07_Functions
+
 ## Instructions
 
 A common pattern in react is not to use setState in every component, but rather to push the state in the application up as far as it makes sense to. In order to allow otherwise pure components to affect this state, the state encapsulating component will expose some mutating callbacks to their children allowing state to be updated, co-ordinating that change to all of its children.contents

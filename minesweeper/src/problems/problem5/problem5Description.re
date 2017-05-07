@@ -5,8 +5,6 @@ let src = {|
 * Define a React Component inside the problem5 file that renders a square with a black border that takes its width as a prop
 * Use that component to make the Problem5 Component render two squares next to each other, one half the size of the other
 
-## Relevant Koans
-
 ## Instructions
 
 It's time for a proper introduction to modules. These are the building blocks of the language and of the most interesting aspects of ReasonML/OCaml. Modules in ReasonML form the backbone of most of the the patterns for abstraction. In fact, every single file in your project is implicitly a module. This is referred to as `first class files`. Files are transformed at compile time into modules, where the name of the module is the name fo the file with a capitalised first letter. So the problem file for this problem `(problem5.re)` becomes the module Problem5. Modules are automatically available to any scope in a project, and become global to the project (barring some cleverness and complexity in the build system). This means that your filenames need to be unique within your program, and can't clash with any of your dependencies.contents
