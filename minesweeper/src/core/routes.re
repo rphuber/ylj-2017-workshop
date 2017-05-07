@@ -36,10 +36,6 @@ let links = [
   ("/problems/8", ReactRe.stringToElement "Problem 8"),
   ("/problems/9", ReactRe.stringToElement "Problem 9"),
   ("/problems/10", ReactRe.stringToElement "Problem 10"),
-  ("/problems/11", ReactRe.stringToElement "Problem 11"),
-  ("/problems/12", ReactRe.stringToElement "Problem 12"),
-  ("/problems/13", ReactRe.stringToElement "Problem 13"),
-  ("/problems/14", ReactRe.stringToElement "Problem 14")
 ];
 
 type problem = {link: string, description: string, problem: unit => ReactRe.reactElement};
@@ -55,10 +51,6 @@ let problems = [
   {link: "/problems/8", description: Problem8Description.src, problem: fun _ => <Problem8 />},
   {link: "/problems/9", description: Problem9Description.src, problem: fun _ => <Problem9 />},
   {link: "/problems/10", description: Problem10Description.src, problem: fun _ => <Problem10 />},
-  {link: "/problems/11", description: Problem11Description.src, problem: fun _ => <Problem11 />},
-  {link: "/problems/12", description: Problem12Description.src, problem: fun _ => <Problem12 />},
-  {link: "/problems/13", description: Problem13Description.src, problem: fun _ => <Problem13 />},
-  {link: "/problems/14", description: Problem14Description.src, problem: fun _ => <Problem14 />}
 ];
 
 module Routes = {
