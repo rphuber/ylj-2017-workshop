@@ -1,0 +1,21 @@
+{
+  "name": "extracredit",
+  "package-specs": [
+    "es6",
+    "commonjs"
+  ],
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": [
+        "core"
+      ]
+    }
+  ],
+  "reason" : { "react-jsx" : true},
+  "bs-dependencies": [
+    "bs-containers",
+    "bs-express",
+    "reason-react"
+  ]
+}
