@@ -9,7 +9,7 @@ let src = {|
 
 ## Instructions
 
-With that in mind, go forth and create. Build a 5x5 game of minesweeper. If you have any questions or get stuck, reach out to the people around you and to the workshop runner for help :)
+With that in mind, go forth and create. Build an nxn (size of your choosing) game of minesweeper. If you have any questions or get stuck, reach out to the people around you and to the workshop runner for help :)
 
 Good luck!
 |};
