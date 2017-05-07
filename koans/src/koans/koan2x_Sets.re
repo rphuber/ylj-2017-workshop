@@ -33,34 +33,34 @@ let koans _ =>
           Mocha.ok true
         }
       );
-      Mocha.it "can be created empty" @@ (fun _ => __ () |> ISet.equal ISet.empty |> Mocha.ok);
+      Mocha.it "can be created empty" @@ (fun _ => todo () |> ISet.equal ISet.empty |> Mocha.ok);
       Mocha.it "can be created from a list" @@ (
-        fun _ => ISet.of_list (__ ()) |> ISet.equal (ISet.add 1 ISet.empty) |> Mocha.ok
+        fun _ => ISet.of_list (todo ()) |> ISet.equal (ISet.add 1 ISet.empty) |> Mocha.ok
       );
       Mocha.it "can be created of one element" @@ (
-        fun _ => ISet.singleton (__ ()) |> ISet.equal (ISet.of_list [1]) |> Mocha.ok
+        fun _ => ISet.singleton (todo ()) |> ISet.equal (ISet.of_list [1]) |> Mocha.ok
       );
       Mocha.it "will not add duplicate elements" @@ (
         fun _ =>
-          ISet.of_list (__ ()) |> ISet.equal (ISet.of_list [1, 1, 2, 3, 4, 4, 5, 1, 2]) |> Mocha.ok
+          ISet.of_list (todo ()) |> ISet.equal (ISet.of_list [1, 1, 2, 3, 4, 4, 5, 1, 2]) |> Mocha.ok
       );
       Mocha.it "you can add elements to a set" @@ (
-        fun _ => ISet.empty |> ISet.add (__ ()) |> ISet.equal (ISet.of_list [1]) |> Mocha.ok
+        fun _ => ISet.empty |> ISet.add (todo ()) |> ISet.equal (ISet.of_list [1]) |> Mocha.ok
       );
       Mocha.it "but duplicates will not be added" @@ (
         fun _ =>
-          ISet.of_list [1, 2, 3] |> ISet.add (__ ()) |> ISet.equal (ISet.of_list [1, 2, 3]) |> Mocha.ok
+          ISet.of_list [1, 2, 3] |> ISet.add (todo ()) |> ISet.equal (ISet.of_list [1, 2, 3]) |> Mocha.ok
       );
       Mocha.it "remove may subtract an element from a set" @@ (
         fun _ =>
-          ISet.of_list [1, 2, 3] |> ISet.remove (__ ()) |> ISet.equal (ISet.of_list [1, 2]) |> Mocha.ok
+          ISet.of_list [1, 2, 3] |> ISet.remove (todo ()) |> ISet.equal (ISet.of_list [1, 2]) |> Mocha.ok
       );
       Mocha.it "remove is a no op if the element isn't in the set" @@ (
         fun _ =>
-          ISet.of_list [1, 2, 3] |> ISet.remove (__ ()) |> ISet.equal (ISet.of_list [1, 2, 3]) |> Mocha.ok
+          ISet.of_list [1, 2, 3] |> ISet.remove (todo ()) |> ISet.equal (ISet.of_list [1, 2, 3]) |> Mocha.ok
       );
       Mocha.it "member can check if an element is in a set" @@ (
-        fun _ => ISet.of_list [1, 2, 3] |> ISet.mem (__ ()) |> Mocha.ok
+        fun _ => ISet.of_list [1, 2, 3] |> ISet.mem (todo ()) |> Mocha.ok
       )
     }
   );
