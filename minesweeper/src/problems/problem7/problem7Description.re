@@ -69,5 +69,7 @@ let doSomethingWithShow
     X.print y;
 ```
 
-Using this information, let's create a functor that generates a react component for a shape. We'll 
+Using this information, let's create a functor that generates a react component for a shape. We'll build a custom module Shape that has an inner functor (Make) by using the provided functor.contents
+
+Follow the instructions in the problem file, and update the problem to display a square and a circle;
 |};
