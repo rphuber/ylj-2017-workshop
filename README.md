@@ -15,12 +15,13 @@ Windows support is fairly spotty at present. I'll make sure to have a virtualbox
 ## Requirements
 
 *   NodeJS >= v6.6.0 and npm >= 3 [Installation Instructions](https://nodejs.org/en/download)
-*   Install refmt, ocamlmerlin and ocamlmerlin-reason according to [reasonml js workflow](https://facebook.github.io/reason/jsWorkflow.html#javascript-workflow-editor-setup-global-utilities)
+*   Install refmt, ocamlmerlin and ocamlmerlin-reason according to [reasonml js workflow](https://facebook.github.io/reason/jsWorkflow.html#javascript-workflow-editor-setup-global-utilities).  
+    (Spoilers: `npm install -g esy 'git://github.com/reasonml/reason-cli.git#bd2db4103a4101f88'`)
 *   Please follow the [reasonml tooling instructions](https://facebook.github.io/reason/tools.html#editor-integration) to set up your text editor. At time of writing this, the following editors are supported:
     *   vim / neovim
     *   emacs
     *   atom
-    *   vscode
+    *   [vscode](https://github.com/freebroccolo/vscode-reasonml)
 
 ## Installation Instructions
 
